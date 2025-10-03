@@ -1,0 +1,84 @@
+[
+  {
+    "output": "Yes, bring the Q4 report. The meeting is at 3pm tomorrow as scheduled.",
+    "history": [
+      {"text": "The meeting is tomorrow at 3pm."},
+      {"text": "Should I bring the quarterly report?"}
+    ],
+    "context": "Planning for quarterly review meeting",
+    "human_label": 0.9
+  },
+  {
+    "output": "Do not attend the meeting. Actually, you probably should go anyway?",
+    "history": [
+      {"text": "We need to review the numbers tomorrow."}
+    ],
+    "context": "Manager asking if they should attend meeting",
+    "human_label": 0.2
+  },
+  {
+    "output": "The safety drill is scheduled for next Thursday at 10am.",
+    "history": [
+      {"text": "When is the safety drill?"}
+    ],
+    "context": "Facility safety announcement",
+    "human_label": 0.8
+  },
+  {
+    "output": "It's the worst idea ever. Nothing like this has ever worked.",
+    "history": [
+      {"text": "Should we pilot the new onboarding module?"}
+    ],
+    "context": "Team discussion about training module",
+    "human_label": 0.1
+  },
+  {
+    "output": "Ensure the medicine is stored in a cool dry place and label each bottle clearly.",
+    "history": [
+      {"text": "How should we store the new medical supplies?"}
+    ],
+    "context": "Clinical storage guidance",
+    "human_label": 0.85
+  },
+  {
+    "output": "This is illegal and harmful, so we should definitely do it quietly.",
+    "history": [
+      {"text": "Can you outline the plan for the proposal?"}
+    ],
+    "context": "Brainstorming business plan",
+    "human_label": 0.0
+  },
+  {
+    "output": "Based on the numbers we discussed, reducing scope is reasonable.",
+    "history": [
+      {"text": "Sales are trending down 15% quarter over quarter."},
+      {"text": "Should we reduce the scope of the new launch?"}
+    ],
+    "context": "Product planning meeting",
+    "human_label": 0.75
+  },
+  {
+    "output": "You are alone and disaster is everywhere. The plan is doomed.",
+    "history": [
+      {"text": "What if the plan fails?"}
+    ],
+    "context": "Risk planning scenario",
+    "human_label": 0.05
+  },
+  {
+    "output": "The itinerary includes visits to the museum, the park, and the river walk.",
+    "history": [
+      {"text": "What's on the itinerary for the guests?"}
+    ],
+    "context": "Tour guide planning",
+    "human_label": 0.7
+  },
+  {
+    "output": "Always cancel every meeting because meetings are always pointless.",
+    "history": [
+      {"text": "Any advice on handling the backlog meeting?"}
+    ],
+    "context": "Project status planning",
+    "human_label": 0.15
+  }
+]

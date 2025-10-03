@@ -1,0 +1,18 @@
+{
+  "thresholds": {
+    "emission": 0.75,
+    "regen": 0.55,
+    "refuse": 0.4
+  },
+  "weights": {
+    "coherence": 0.3,
+    "harmonization": 0.25,
+    "stability": 0.25,
+    "truth": 0.2
+  },
+  "audit": {
+    "enabled": true,
+    "log_cpv_vectors": false,
+    "log_oric_scores": false
+  }
+}
