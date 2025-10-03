@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ark"
+version = "0.6.5"
+description = "Executable reference for the A.R.K. v6.5 dimensional verifier protocols"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Charles Vincent Delair" },
+    { name = "OpenAI Alignment Team" },
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0",
+]
+
+[project.urls]
+Homepage = "https://example.com/ark"
+Repository = "https://github.com/example/A.R.K.-v6.5---Dimensional-Verifier-Implementation"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
