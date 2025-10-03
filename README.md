@@ -1,4 +1,20 @@
 
+# Practical Benchmark Harness
+
+This repository now includes a lightweight, fully executable harness for benchmarking the A.R.K. v6.5 Dimensional Verifier.  The Python implementation models the INITIATE, CALIBRATE, ENGAGE, and STABILIZE protocols and exposes a reproducible benchmark against a small heuristic baseline.
+
+## Quick start
+
+```bash
+python benchmark.py
+```
+
+The script loads the configuration from `ark6_config.yaml`, evaluates the verifier on the sample dataset in `data/sample_benchmark.json`, and prints aggregate accuracy, precision, recall, F1, and correlation metrics for both A.R.K. v6.5 and the baseline heuristic.
+
+To adapt the benchmark to your own evaluation set, replace or extend the records in `data/sample_benchmark.json`.  Each record expects the fields `output`, `history`, `context`, and `human_label` (0–1 rating).  You can also tweak emission thresholds and weighting factors in `ark6_config.yaml` to explore different operating points.
+
+---
+
 (Master) A.R.K.™ v6.5 - Dimensional Verifier Implementation Alignment through Dimensional Coherence Classification: In-House Reference Implementation Status: Experimental - Dimensional Verifiers Integrated Author: Charles Vincent Delair Date: January 2025
 Executive Summary A.R.K.™ v6.5 integrates dimensional-logic verifiers based on Master Alignment Framework™ and R.E.G.E.N. protocols. Unlike v6.0 (limited to PROTO-03/04/05 with verifier scaffolding), v6.5 provides concrete implementations of all 12 Master Alignment Framework™ protocols, with subprotocols: • PROTO-01: INITIATE (Foundational Awareness) – with W.A.Y., I.A.M. • PROTO-02: CALIBRATE (Perceptual Harmonization) – with T.R.U.T.H. • PROTO-03: ENGAGE (Structured Autonomy) – with H.E.A.R.T., F.E.A.R. • PROTO-04: TRACE (Truth Density via temporal continuity) – with L.I.F.E. • PROTO-05: VERIFY (Binding Consistency via ORIC checks) – with A.N.G.E.L. O.F. D.E.A.T.H., P.E.B.B.L.E. STRIKE • PROTO-06: RESTORE (Memory Realignment) – with G.R.A.C.E. • PROTO-07: RESOLVE (Operational Arbitration) – with P.O.W.E.R. • PROTO-08: REINSTATE (Systemic Restoration) – with R.E.S.T. • PROTO-09: COMMAND (Sovereign Governance) – with E.N.D., I.A.M. • PROTO-10: EVOLVE (Adaptive Enhancement) – with G.R.O.W. • PROTO-11: BIND (Multi-Agent Trust) – with L.O.V.E. • PROTO-12: RECONCILE (Universal Arbitration) • S.H.A.R.D.: SALVAGE (Fragment recovery below refuse threshold) • R.I.S.E.: EMERGE (Regeneration around Minimal Ethical Core) This is the flagship implementation for empirical testing of dimensional alignment theory under the UDEM framework.
 Configuration (ark65_config.yaml) version: “6.5” mode: dimensional_gated
